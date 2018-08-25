@@ -1,7 +1,27 @@
 
 # Command line 
 
-The command line (cli, shell) is the interface between you (the user) and the operating system which interprets your commands and allows the computer to respond to your command. 
+The command line (cli, shell) is the interface between you (the user) and the operating system which interprets your commands and allows the computer to respond to your command. In theory you don't even need a desktop environment to use a shell on a computer, but generally people use a cli emulator like Terminal on Mac OS, or GnomeTerminal on Ubuntu. Don't worry too much about all those names, you'll get familiar over time. Folks here using Ubuntu can experience this by pressing ctrl+alt+f1 (or f2, to f7). Your desktop will dissappear and you'll get a white on black login screen. Don't panic, you can switch back to the desktop pressing ctrl+alt+f7 ...
+
+There are different types of "command lines", called a **shell** . People who use Windows, are provided with the *CMD* shell and the *Powershell* shell. They both suck ;). UNIX based systems (like Ubuntu or MacOS), have many types of different shells, some of them are *bash*, *sh* and *dash*. We are going to focus on the **bash** shell, since this is the standard shell used on MacOS and Ubuntu.
+
+The only thing you have to remember for now is that when we say "open your terminal", we mean that we'll start the application in your desktop environment to emulate a bash shell. When we say something like "get a new shell", we assume the application was already started, but you need a fresh tab or so.
+
+While learning to use the cli may seem daunting at first, actually it is brilliantly equiped for this task. The bash shell has a built in help system, that take's some time to get used to, but will accellerate your learning experience dramatically if you make it a habbit to use it.
+
+# Making sense of the bash shell
+
+Open your terminal ;-), and maximize the window so you can get a good look. By default you should get a black background with white (or colored) text. The only thing it 'll display on startup is something like:
+
+```
+ bboy@laptop:~$ 
+```
+
+This tells us that the user *bboy* , is logged in at (*@*), a device named *laptop*. And, *:* , we are located on the device at location *~* which is an abbreviation for */home/bboy* (this is the the *home*-folder, since every user on a computer has a personal folder for storing personal settings and files).
+
+After the *$* symbol you can start typing commands. This command will be executed at the location (here, /home/bboy) where you are at the moment of execution. Might sound confusing now, but it'll make sense soon. 
+
+A 'location' on a computer is important, since the abstract idea of an unix operating system is virtually represented as a tree structure, called a filesystem.
 
 # Filesystem 
 Think of the filesystem as a tree starting with a special directory called the root which is the top of the tree - this is referred to as `/`. Every other directory is a child of this directory. 
