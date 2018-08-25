@@ -1,4 +1,14 @@
 
+# Why would you want to use the command line?
+
+Good question. All those nice modern GUI's (graphical user interfaces) are tempting for rookies to ignore the command line, but actually, if you put in some effor to learn to use the command line, you will work **faster**, more **flexible** and be able to easily **automate** tedious and repetitive tasks.
+
+Using the command line you are talking directly to your device its processor, where GUI's are an extra layer of abstraction, code and blah that slows stuff down, and are merely a wrapper around your command line's commands.
+
+With command line, you can do EVERYTHING you can do with a GUI and **much more**, from listening to music, to browsing the web to programming beautiful web applications!
+
+Plus, you will look like badass keyboard wizard and impress all the girls (or boys, whatever's your preference :)).
+
 # Command line 
 
 The command line (cli, shell) is the interface between you (the user) and the operating system which interprets your commands and allows the computer to respond to your command. In theory you don't even need a desktop environment to use a shell on a computer, but generally people use a cli emulator like Terminal on Mac OS, or GnomeTerminal on Ubuntu. Don't worry too much about all those names, you'll get familiar over time. Folks here using Ubuntu can experience this by pressing ctrl+alt+f1 (or f2, to f7). Your desktop will dissappear and you'll get a white on black login screen. Don't panic, you can switch back to the desktop pressing ctrl+alt+f7 ...
@@ -8,6 +18,7 @@ There are different types of "command lines", called a **shell** . People who us
 The only thing you have to remember for now is that when we say "open your terminal", we mean that we'll start the application in your desktop environment to emulate a bash shell. When we say something like "get a new shell", we assume the application was already started, but you need a fresh tab or so.
 
 While learning to use the cli may seem daunting at first, actually it is brilliantly equiped for this task. The bash shell has a built in help system, that take's some time to get used to, but will accellerate your learning experience dramatically if you make it a habbit to use it.
+
 
 # Making sense of the bash shell
 
@@ -40,6 +51,8 @@ Think of the filesystem as a tree starting with a special directory called the r
 My `home` directory in this case is `/users/unmesh` so when I type `cd` (with no arguments), I navigate to my home directory.
 
 # Commands
+
+
 
 ## General syntax
 `command_name param1 param2 [OPTIONS]`
