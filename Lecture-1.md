@@ -52,13 +52,48 @@ My `home` directory in this case is `/users/unmesh` so when I type `cd` (with no
 
 # Commands
 
+In a different context, different commands may be available. To see which commands are available you perform something we call *double-tab* , which literally means, pressing the tab-key two times, tab-tab. If nothing happens, type one letter, for example `l` , and you will see all commands available starting with 'l', OR there might be so many commands available that the shell will say "Display all 104 possibilities? (y or n)". If you press 'y', the shell will continue to display the commands. On the bottom of the page there may be a pager '---More---', because there are commands not yet visible on your screen. Press 'spacebar' to see the next batch of commands, or type 'q' to return to type a command.
 
+Type `ls` , and do double-tab. You'll see 'ls' displayed as first command, followed with other commands like lsusb, lsblk, lsmod etc etc. Only worry about ls for now.
+
+To execute the 'ls' command, press enter. This will show the contents of your current directory. On most systems, in your homefolder you'll find default folders like Desktop, Downloads, Documents and so on. Note that you see these folders as well in your graphical user interface. It are the same folders ;-).
+
+### manual pages
+
+But how can you figure out what 'ls' (or any other command) exactly does, and how it should be used? Exactly, this is why we should make use of the built in help system, called the 'manual pages'. There are multiple methods to get help on a command;
+
+- type `ls --help` . This will display the short help for the command. Note that 'short' may seem relative :)
+- type `man ls` . This will open the manual page for 'ls' in your terminal. 
+- ask the interwebz
+
+Open the manual page for ls, by typing `man ls`. A manual page is paged (navigate with up/down arrows) an can be searched: Type `/` and your keyword, then press enter to highlight the matching keywords. If there are multiple matches type `n` to see the next match, and shift+n to return to the previous match. Press `q` to close the manual page.
+
+Open the manual page again and lets give it a top-down read. The first section shows the name, and a brief description of the command. The **synopsis** explains how the command should be typed. In our case of 'ls' you'll see:
+
+```
+SYNOPSIS
+	ls [OPTION]... [FILE]...
+```
+
+So how does this translate to the shell? It could look something like this:
+
+```
+ bboy@laptop:~$ ls -l usernames.txt
+                |  |      |-> the file, typed relative, the absolute path would be /home/bboy/usernames.txt
+                |  |--------> an option, the option -l means that you want to show a list with extra info about the stuff listed
+                |-----------> the command
+```
+
+To figure out which options are available, continu reading the manual page. After synopsis there is the section **description** , which lists all available options, complete with explanation. Take your time to read through a manual before frustrating yourself with trial and error commands. The extra time you invest in reading and understanding commands, will save you tons of time later.
+
+If you have figured out the right command for a certain tasks, save it somewhere, so you don't have to memorize crazy long commands like `apt update && apt upgrade -y >> /var/log/update.log && less /var/log/update.log` (this line updates all the software on ubuntu and writes the output to a logfile, whereafter it'll open the logfile for you to inspect). 
 
 ## General syntax
 `command_name param1 param2 [OPTIONS]`
 In the above, square brackets denote the optional part of the command.
 The square brackets are not supposed to be typed.
 `param1` and `param2` are COMPULSORY parameters.
+
 ## Some commonly used commands
 
 `ls` - show the contents of the directory. `ls -a` will show all hidden files. `ls -l` will show more files in long format (more details)
@@ -86,6 +121,10 @@ The square brackets are not supposed to be typed.
 `mkdir` - create a new directory
 
 `touch` - create an empty file
+
+# Users and permissions
+
+You already know you're logged in to the terminal as a user (in our example bboy). On a ... ( tbc )
 
 # vim
 vim is an editor (like notepad on windows)
