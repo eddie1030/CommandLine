@@ -11,6 +11,8 @@ Plus, you will look like badass keyboard wizard and impress all the girls (or bo
 
 # Command line 
 
+interactive learning : https://www.codecademy.com/learn/learn-the-command-line
+
 The command line (cli, shell) is the interface between you (the user) and the operating system which interprets your commands and allows the computer to respond to your command. In theory you don't even need a desktop environment to use a shell on a computer, but generally people use a cli emulator like Terminal on Mac OS, or GnomeTerminal on Ubuntu. Don't worry too much about all those names, you'll get familiar over time. Folks here using Ubuntu can experience this by pressing ctrl+alt+f1 (or f2, to f7). Your desktop will dissappear and you'll get a white on black login screen. Don't panic, you can switch back to the desktop pressing ctrl+alt+f7 ...
 
 There are different types of "command lines", called a **shell** . People who use Windows, are provided with the *CMD* shell and the *Powershell* shell. They both suck ;). UNIX based systems (like Ubuntu or MacOS), have many types of different shells, some of them are *bash*, *sh* and *dash*. We are going to focus on the **bash** shell, since this is the standard shell used on MacOS and Ubuntu.
