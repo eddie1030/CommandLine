@@ -60,6 +60,24 @@ Type `ls` , and do double-tab. You'll see 'ls' displayed as first command, follo
 
 To execute the 'ls' command, press enter. This will show the contents of your current directory. On most systems, in your homefolder you'll find default folders like Desktop, Downloads, Documents and so on. Note that you see these folders as well in your graphical user interface. It are the same folders ;-).
 
+### the environment
+
+One more important thing you should know about commands, is that they are executed within a certain "context", called an environment. A new terminal window has a specific environment for that specific session. If you close the windows, its environment ceases to exist.
+
+An environment is defined by what we call "environment variables". Those variables can be viewed with the "env" command (try it!). You will discover familiar looking variables, and also a bunch of strange looking ones.
+
+Look for "HOME=" , "PWD=" and "PATH="
+
+For commands to work we are interested in the **"PATH"** variable. If you type the command "echo $PATH" you will get a result something like:
+
+```
+/bin:/usr/bin:/usr/local/bin
+```
+
+This means that if you type a "relative" command, like "ls", the shell knows it has to look for the corresponding "absolute" command in the directories defined in the **PATH** variable. In the example it will look for "ls" in the folder **/bin** , the folder **/usr/bin** and the folder **/usr/local/bin**
+
+To see what the absolute path for a relative command is, type "which command" ( in our example "which ls" ).
+
 ### manual pages
 
 But how can you figure out what 'ls' (or any other command) exactly does, and how it should be used? Exactly, this is why we should make use of the built in help system, called the 'manual pages'. There are multiple methods to get help on a command;
