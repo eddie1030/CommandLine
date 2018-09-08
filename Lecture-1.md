@@ -130,6 +130,8 @@ You already know you're logged in to the terminal as a user (in our example bboy
 vim is an editor (like notepad on windows)
 Sometimes it is a little hard to remember all the vim commands so here is a handy cheatsheet: https://www.fprintf.net/vimCheatSheet.html - with practice it will not seem so odd. 
 
+**learn vim while playing a retro game !!!** https://vim-adventures.com/ ( note, it's not easy! )
+
 `vim <filename>` will open a file in vim
 When you are in vim there are two modes:
 1. Insert mode - in this mode you can enter and change text
